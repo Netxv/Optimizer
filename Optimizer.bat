@@ -40,6 +40,8 @@ echo Task 3: Spoofing HWID...
 echo ------------------------------------
 timeout 1 > NUL
 C:\Users\Net\Documents\AntiOS\generate_fingerprint.py > NUL
+Reg.exe add "HKLM\SOFTWARE\NVIDIA Corporation\Global" /v "{41FCC608-8496-4DEF-B43E-7D9BD675A6FF}" /t REG_BINARY /d "01" /f
+Reg.exe add "HKLM\SYSTEM\ControlSet001\Services\nvlddmkm" /v "{41FCC608-8496-4DEF-B43E-7D9BD675A6FF}" /t REG_BINARY /d "01" /f
 "C:\Program Files (x86)\MSI Afterburner\MSIAfterburner.exe" /Profile1 /Q
 cls
 echo ----------------------------------
