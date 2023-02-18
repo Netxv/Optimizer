@@ -20,14 +20,7 @@ del /s /f /q C:\windows\temp\*.* >nul 2>&1
 del /s /f /q C:\WINDOWS\Prefetch >nul 2>&1
 del /s /f /q %temp%\*.* >nul 2>&1
 del /s /f /q D:\Temp >nul 2>&1
-deltree /y c:\windows\tempor~1 >nul 2>&1
-deltree /y c:\windows\temp >nul 2>&1
-deltree /y c:\windows\tmp >nul 2>&1
-deltree /y c:\windows\ff*.tmp >nul 2>&1
-deltree /y c:\windows\history >nul 2>&1
-deltree /y c:\windows\cookies >nul 2>&1
-deltree /y c:\windows\recent >nul 2>&1
-deltree /y c:\windows\spool\printers >nul 2>&1
+del /s /f /q C:\Users\Administrator\AppData\Local\NVIDIA >nul 2>&1
 echo ------------------------------------
 echo Task 1: All Temporary Files Deleted
 echo ------------------------------------
