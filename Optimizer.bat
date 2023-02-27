@@ -14,13 +14,21 @@ echo --------------------
 timeout 2 > NUL
 cls
 dism >nul 2>&1
-set temp1="C:\Users\Administrator\AppData\Local\Temp\"
-set temp2="E:\TEMP\"
-del /s /f /q C:\windows\temp\*.* >nul 2>&1
 del /s /f /q C:\WINDOWS\Prefetch >nul 2>&1
 del /s /f /q %temp%\*.* >nul 2>&1
 del /s /f /q D:\Temp >nul 2>&1
 del /s /f /q C:\Users\Administrator\AppData\Local\NVIDIA >nul 2>&1
+del /s /f /q "C:\Windows\prefetch\*.*" >nul 2>&1
+del /f /q %localappdata%\Temp\* >nul 2>&1
+rd /s /q "%WINDIR%\Temp" >nul 2>&1
+rd /s /q "%TEMP%" >nul 2>&1
+del /f /q %localappdata%\Microsoft\Windows\WebCache\*.* >nul 2>&1
+del /f /q %SystemRoot%\setupapi.log >nul 2>&1
+del /f /q %SystemRoot%\Panther\* >nul 2>&1
+del /f /q %SystemRoot%\inf\setupapi.app.log >nul 2>&1
+del /f /q %SystemRoot%\inf\setupapi.dev.log >nul 2>&1
+del /f /q %SystemRoot%\inf\setupapi.offline.log >nul 2>&1
+
 echo ------------------------------------
 echo Task 1: All Temporary Files Deleted
 echo ------------------------------------
