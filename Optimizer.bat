@@ -13,6 +13,7 @@ echo Credits to Net#2025
 echo --------------------
 timeout 2 > NUL
 cls
+
 dism >nul 2>&1
 del /f /q %localappdata%\NVIDIA >nul 2>&1
 del /f /q "%WINDIR%\prefetch\*.*" >nul 2>&1
@@ -33,15 +34,18 @@ timeout 1 > NUL
 echo Task 2: Compressing Windows...
 echo ------------------------------------
 timeout 1 > NUL
+
 Compact.exe /CompactOS:always > NUL
 echo Task 3: Spoofing HWID...
 echo ------------------------------------
 timeout 1 > NUL
+
 %WINDIR%\AntiOS\generate_fingerprint.py > NUL
 reg.exe add "HKLM\SOFTWARE\NVIDIA Corporation\Global" /v "{41FCC608-8496-4DEF-B43E-7D9BD675A6FF}" /t REG_BINARY /d "01" /f
 reg.exe add "HKLM\SYSTEM\ControlSet001\Services\nvlddmkm" /v "{41FCC608-8496-4DEF-B43E-7D9BD675A6FF}" /t REG_BINARY /d "01" /f
 "C:\Program Files (x86)\MSI Afterburner\MSIAfterburner.exe" /Profile1 /Q
 cls
+
 echo ----------------------------------
 echo Done...Quitting
 echo ----------------------------------
