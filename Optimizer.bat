@@ -15,17 +15,25 @@ timeout 2 > NUL
 cls
 
 dism >nul 2>&1
-del /f /q %localappdata%\NVIDIA >nul 2>&1
-del /f /q "%WINDIR%\prefetch\*.*" >nul 2>&1
+del /f /q %temp%\* >nul 2>&1
+del /f /q %windir%\Temp\* >nul 2>&1
+del /f /q %windir%\prefetch\* >nul 2>&1
 del /f /q %localappdata%\Temp\* >nul 2>&1
-del /f /q "%WINDIR%\Temp" >nul 2>&1
-del /f /q "%TEMP%" >nul 2>&1
+del /f /q %localappdata%\NVIDIA >nul 2>&1
 del /f /q %localappdata%\Microsoft\Windows\WebCache\*.* >nul 2>&1
 del /f /q %SystemRoot%\setupapi.log >nul 2>&1
 del /f /q %SystemRoot%\Panther\* >nul 2>&1
 del /f /q %SystemRoot%\inf\setupapi.app.log >nul 2>&1
 del /f /q %SystemRoot%\inf\setupapi.dev.log >nul 2>&1
 del /f /q %SystemRoot%\inf\setupapi.offline.log >nul 2>&1
+rd /s /q %localappdata%\Discord\app-1.0.9011\modules\discord_cloudsync-1
+rd /s /q %localappdata%\Discord\app-1.0.9011\modules\discord_krisp-1
+rd /s /q %localappdata%\Discord\app-1.0.9011\modules\discord_dispatch-1
+rd /s /q %localappdata%\Discord\app-1.0.9011\modules\discord_erlpack-1
+rd /s /q %localappdata%\Discord\app-1.0.9011\modules\discord_game_utils-1
+rd /s /q %localappdata%\Discord\app-1.0.9011\modules\discord_media-1
+rd /s /q %localappdata%\Discord\app-1.0.9011\modules\discord_overlay2-1
+rd /s /q %localappdata%\Discord\app-1.0.9011\modules\discord_spellcheck-1
 
 echo ------------------------------------
 echo Task 1: All Temporary Files Deleted
