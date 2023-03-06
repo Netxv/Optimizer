@@ -20,10 +20,10 @@ dism >nul 2>&1
 del /f /q %temp%\* >nul 2>&1
 
 :: Delete RevoltG Temps
-del /f /q %appdata%\revoltg\Cache\* >nul 2>&1
-del /f /q %appdata%\revoltg\Code Cache\* >nul 2>&1
-del /f /q %appdata%\revoltg\blob_storage\* >nul 2>&1
-del /f /q %appdata%\revoltg\GPUCache\* >nul 2>&1
+del /f /q "%appdata%\revoltg\Cache\*" >nul 2>&1
+del /f /q "%appdata%\revoltg\Code Cache\*" >nul 2>&1
+del /f /q "%appdata%\revoltg\blob_storage\*" >nul 2>&1
+del /f /q "%appdata%\revoltg\GPUCache\*" >nul 2>&1
 
 :: Delete Windows Temps
 del /f /q %windir%\Temp\* >nul 2>&1
