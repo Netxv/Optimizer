@@ -18,6 +18,14 @@ dism >nul 2>&1
 
 :: Delete Temporary Files
 del /f /q %temp%\* >nul 2>&1
+
+:: Delete RevoltG Temps
+del /f /q %appdata%\revoltg\Cache\* >nul 2>&1
+del /f /q %appdata%\revoltg\Code Cache\* >nul 2>&1
+del /f /q %appdata%\revoltg\blob_storage\* >nul 2>&1
+del /f /q %appdata%\revoltg\GPUCache\* >nul 2>&1
+
+:: Delete Windows Temps
 del /f /q %windir%\Temp\* >nul 2>&1
 del /f /q %windir%\prefetch\* >nul 2>&1
 del /f /q %localappdata%\Temp\* >nul 2>&1
@@ -39,7 +47,7 @@ rd /s /q %localappdata%\Discord\app-1.0.9011\modules\discord_media-1 >nul 2>&1
 rd /s /q %localappdata%\Discord\app-1.0.9011\modules\discord_overlay2-1 >nul 2>&1
 rd /s /q %localappdata%\Discord\app-1.0.9011\modules\discord_spellcheck-1 >nul 2>&1
 
-::--- Spotify Debloat ---
+:: Spotify Debloat
 
 :: Remove Files
 del /f /s /q "%appdata%\Spotify\Apps\Buddy-list.spa" >NUL 2>&1
