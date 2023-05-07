@@ -37,6 +37,13 @@ del /f /q %SystemRoot%\inf\setupapi.app.log >nul 2>&1
 del /f /q %SystemRoot%\inf\setupapi.dev.log >nul 2>&1
 del /f /q %SystemRoot%\inf\setupapi.offline.log >nul 2>&1
 
+:: Delete AMD Caches
+del /f /q %localappdata%\AMD\DX9Cache >nul 2>&1
+del /f /q %localappdata%\AMD\DxCache >nul 2>&1
+del /f /q %localappdata%\AMD\DxcCache >nul 2>&1
+del /f /q %localappdata%\AMD\OglCache >nul 2>&1
+del /f /q %localappdata%\AMD\VkCache >nul 2>&1
+
 :: Discord Debloat
 rd /s /q %localappdata%\Discord\app-1.0.9013\modules\discord_cloudsync-1 >nul 2>&1
 rd /s /q %localappdata%\Discord\app-1.0.9013\modules\discord_krisp-1 >nul 2>&1
