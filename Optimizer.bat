@@ -38,14 +38,14 @@ del /f /q %SystemRoot%\inf\setupapi.dev.log >nul 2>&1
 del /f /q %SystemRoot%\inf\setupapi.offline.log >nul 2>&1
 
 :: Discord Debloat
-rd /s /q %localappdata%\Discord\app-1.0.9012\modules\discord_cloudsync-1 >nul 2>&1
-rd /s /q %localappdata%\Discord\app-1.0.9012\modules\discord_krisp-1 >nul 2>&1
-rd /s /q %localappdata%\Discord\app-1.0.9012\modules\discord_dispatch-1 >nul 2>&1
-rd /s /q %localappdata%\Discord\app-1.0.9012\modules\discord_erlpack-1 >nul 2>&1
-rd /s /q %localappdata%\Discord\app-1.0.9012\modules\discord_game_utils-1 >nul 2>&1
-rd /s /q %localappdata%\Discord\app-1.0.9012\modules\discord_media-1 >nul 2>&1
-rd /s /q %localappdata%\Discord\app-1.0.9012\modules\discord_overlay2-1 >nul 2>&1
-rd /s /q %localappdata%\Discord\app-1.0.9012\modules\discord_spellcheck-1 >nul 2>&1
+rd /s /q %localappdata%\Discord\app-1.0.9013\modules\discord_cloudsync-1 >nul 2>&1
+rd /s /q %localappdata%\Discord\app-1.0.9013\modules\discord_krisp-1 >nul 2>&1
+rd /s /q %localappdata%\Discord\app-1.0.9013\modules\discord_dispatch-1 >nul 2>&1
+rd /s /q %localappdata%\Discord\app-1.0.9013\modules\discord_erlpack-1 >nul 2>&1
+rd /s /q %localappdata%\Discord\app-1.0.9013\modules\discord_game_utils-1 >nul 2>&1
+rd /s /q %localappdata%\Discord\app-1.0.9013\modules\discord_media-2 >nul 2>&1
+rd /s /q %localappdata%\Discord\app-1.0.9013\modules\discord_overlay2-1 >nul 2>&1
+rd /s /q %localappdata%\Discord\app-1.0.9013\modules\discord_spellcheck-1 >nul 2>&1
 
 :: Spotify Debloat
 
